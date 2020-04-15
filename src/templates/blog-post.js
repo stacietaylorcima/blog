@@ -51,7 +51,7 @@ export const pageQuery = graphql`
     contentfulBlogPost(slug: { eq: $slug }) {
       title
       publishDate(formatString: "MMMM Do, YYYY")
-      heroImage 
+      heroImage { ... }
       body {
         childMarkdownRemark {
           html
