@@ -50,7 +50,7 @@ export const pageQuery = graphql`
               ...GatsbyContentfulFluid_tracedSVG
             }
           }
-          description {
+          description { 
             childMarkdownRemark {
               html
             }
